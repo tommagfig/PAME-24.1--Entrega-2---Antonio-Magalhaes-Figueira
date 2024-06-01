@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+#header{
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+    color: white;
+}
+
+#tela{
+    background-color: blue;
+    height: 90vh;
+    width: 100vw;
+}
+
+#formulario{
+    background-color: null;
+    height: 60vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.pergunta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
