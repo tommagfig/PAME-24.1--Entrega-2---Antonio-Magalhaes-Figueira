@@ -7,29 +7,194 @@ body{
     height: 10vh;
     width: 100vw;
     color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 800px;
+}
+
+#logoFluxo{
+    height: 3vh;
+    width: 3vw;
+}
+
+.inglês{
+    color: orange;
+    font-size: 25px;
 }
 
 #tela{
-    background-color: blue;
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#tela::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(Imagens/Foto_Fluxo.png) no-repeat center center fixed; 
+    background-size: cover;
+    filter: grayscale(100%) blur(3px);
+    z-index: -1;
 }
 
 #formulario{
     background-color: null;
-    height: 60vh;
-    width: 45vw;
+    color: white;
+    height: 80vh;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 10 px;
+    gap: 17px;
 }
 
 .pergunta{
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+}
+
+.caixaPergunta{
+    height: 3vh;
+    width: 20vw;
+    border-radius: 7px;
+}
+
+.senha{
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    align-items: first baseline;
+}
+
+.esqueceu{
+    color: orange;
+}
+
+.switch{
+    color: orange;
+    display: flex;
+    align-items:first center;
+    justify-content:center;
+    cursor: pointer;
+}
+
+.switch-wrapper{
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    position: relative;
+}
+
+.switch-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background-color: orange;
+}
+
+.switch-button::before{
+    content: "";
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 4px;
+    border-radius: 50%;
+    transition: .4s all ease;
+    background-color: aliceblue;
+}
+
+#switch-input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#botaoLogin{
+    background-color: orange;
+    color: white;
+    height: 6vh;
+    width: 20vw;
+    border-radius: 9px;
+}
+
+#google_apple{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+#google{
+    background-color: white;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 14px;
+}
+
+#apple{
+    background-color: white;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 14px;
+}
+
+#logoGoogle{
+    height: 2vh;
+    width: 2vh;
+}
+
+#logoApple{
+    height: 2vh;
+    width: 1vw;
+}
+
+#esquerda{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.faça{
+    color: white;
+    width: 40vh;
+    height: 0vh;
+    font-size: 50px;
+}
+
+#Pré-Capa{
+    width: 70vw;
+    height: 60vh;
+}
+
+.footer{
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 90px;
+    color: white;
 }

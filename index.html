@@ -9,20 +9,52 @@
 </head>
 <body>
     <div id="header">
-        <h1>FluxoSocial</h1>
+        <h1> <img id="logoFluxo" src="Imagens/logoFluxo.png" alt="">FluxoSocial</h1>
+        <label class="inglês">It's happening now!</label>
     </div>
     <div id="tela">
-         <form id="formulario"> Email:
-             <label class="pergunta">
+
+        <div id="esquerda">
+            <label class="faça">Faça seu login!</label>
+            <img id="Pré-Capa" src="Imagens/Pré-Capa.png"/>
+        </div>
+
+        <form id="formulario">
+            <label class="pergunta"> Email:
                 <input class="caixaPergunta"/>
             </label>
 
-            <label class="pergunta"> Senha:
-                 <input class="caixaPergunta"/>
-             </label>          
-             <button id="botaoLogin">Logar</button>
-        </form>
+            <label class="senha">
+                <label class="pergunta"> Senha: </label>
+                <label class="esqueceu"> Esqueceu sua senha?</label> 
+            </label>
+                     
+            </label> 
+            <input class="caixaPergunta"/>
 
-    </div>
+            <label class="switch">
+                <div class="switch-wrapper">
+                    <input id="switch-input" type="checkbox"/> 
+                    <span class="switch-button"></span>
+                </div>
+                <span class="switch-text"> Lembrar-se de mim</span>
+            </label>
+                
+            <button id="botaoLogin" onclick="Mensagem()">Entrar</button>
+
+            <label id="google_apple">
+                <button id="google"> <img id="logoGoogle" src="Imagens/logoGoogle.png" alt=""> Entrar com o Google</button>
+                <button id="apple"> <img id="logoApple" src="Imagens/logoApple.png" alt=""> Entar com Apple</button>
+            </label>
+        </form>
+    </div> 
+    <footer class="footer">
+        <label>Sobre</label>
+        <label>Central de ajuda</label>
+        <label>Termos de serviço</label>
+        <label>Política de privacidade</label>
+        <label>Acessibilidade</label>
+        <label>Política de cookies</label>
+    </footer>
 </body>
 </html>
